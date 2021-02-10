@@ -2,15 +2,7 @@
 {extends file='page.tpl'}
 
 {block name='page_header_container'}{/block}
-{block name='head_seo_title'} {$page.meta.title} - {$xipblogpost.post_title} {/block}
 
-{block name='head' append}
-    <meta property="og:url"                content="{$urls.current_url}" />
-    <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="{$page.meta.title} - {$xipblogpost.post_title}" />
-    <meta property="og:description"        content="{$xipblogpost.meta_description nofilter}" />
-    <meta property="og:image"              content="{$urls.shop_domain_url}{$xipblogpost.post_img_home_default}" />
-{/block}
 
 {block name="page_content_container"}
 	<section id="content" class="page-content">
@@ -111,6 +103,7 @@
 			{/if}
 		</div>
 	{/if}
+<<<<<<< HEAD
 {/block}
 =======
 {extends file='page.tpl'}
@@ -214,3 +207,6 @@
 	{/if}
 {/block}
 >>>>>>> parent of 5634455 (Merge pull request #21 from FuenRob/feature-add-button-navigation)
+=======
+{/block}
+>>>>>>> parent of 3369dab (Merge pull request #26 from taoufiqaitali/patch-1)
